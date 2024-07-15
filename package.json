@@ -14,6 +14,7 @@
     "lint": "next lint",
     "test": "vitest",
     "test:ci": "vitest run",
+    "test:e2e": "yarn playwright test",
     "lint:rules": "eslint --print-config rules > rules.json",
     "postinstall": "npx husky install .husky",
     "release": "semantic-release"
@@ -25,6 +26,7 @@
   },
   "devDependencies": {
     "@axe-core/react": "^4.9.1",
+    "@playwright/test": "^1.45.1",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/github": "^10.1.0",
