@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
-import { Axe } from '@/components/Axe';
-import { MSW } from '@/components/MSW';
+import { Axe } from '@/components/utils/Axe';
+import { MSW } from '@/components/utils/MSW';
 
 import './globals.css';
 
