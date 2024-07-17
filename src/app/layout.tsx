@@ -1,8 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
-import { Axe } from '@/components/utils/Axe';
-import { MSW } from '@/components/utils/MSW';
+import { Layout } from '@/components/layout/Layout';
 
 import './globals.css';
 
@@ -20,10 +19,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Axe />
-        <MSW />
-        {children}
+      <body className={`${inter.className} flex h-screen flex-col`}>
+        <Layout>{children}</Layout>
       </body>
     </html>
   );
