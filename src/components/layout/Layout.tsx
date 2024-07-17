@@ -5,6 +5,7 @@ import { ReactNode } from 'react';
 import { SkipLink } from 'govuk-react';
 
 import { Footer } from '@/components/layout/footer/Footer';
+import { Header } from '@/components/layout/header/Header';
 import { Axe } from '@/components/utils/Axe';
 import { MSW } from '@/components/utils/MSW';
 import { StyledComponentsRegistry } from '@/components/utils/StyledComponentsRegistry';
@@ -22,6 +23,8 @@ export const Layout = ({ children }: LayoutProps) => {
       <MSW />
 
       <StyledComponentsRegistry>
+        <Header />
+
         <main className="flex-grow p-4" id="main-content">
           {children}
         </main>
